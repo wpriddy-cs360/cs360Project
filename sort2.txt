@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<title>Sorting</title>
+<head>
+
+<h1>Sorting in Java</h1>
+
+</head>
+
+<body>
+
+<h2>Level 1</h2>
+
+<p>
+There are multiple ways to sort in Java. Most common are the types such as bubble sorting, insertion sorting,
+merge sorting, and selection sorting. These all work differently, and each come with their strengths and weaknesses,
+mostly stemming from how effecient, or not, they are. None of these are built into Java however, the one that is
+only works with arrays, and only sorts smallest to largest. It is the Arrays.sort() method, and while useful does
+have its drawbacks, as mentioned before.
+</p>
+
+<p>
+Example:
+
+import java.util.Arrays;
+
+public class arrayEx
+{
+	int[] toSort = { 8, 23, 54, 1, 39, 87, 101 };
+
+	Arrays.sort(toSort);
+
+	System.out.printf("Modified arr[] : %s", Arrays.toString(arr));
+}
+
+This would print the sorted array: Modified arr[] : [1, 8, 23, 39, 54, 87, 101]
+</p>
+
+<h2>Level 2</h2>
+
+<p>
+
+The most basic sorting method was already mentioned above, the Bubble Sorting method. Bubble sorting works by
+swapping adjacent elements if they're not in the right order, and repeating until the entire array is sorted.
+Your program can check when this is complete by noting when the entire array can be run through without swapping
+any values. At that point, all values are in their desired order within the array.
+
+</p>
+
+<p>
+
+Here are the steps for sorting an array of numbers from least to greatest:
+
+    4 2 1 5 3: The first two elements are in the wrong order, so we swap them.
+
+    2 4 1 5 3: The second two elements are in the wrong order too, so we swap.
+
+    2 1 4 5 3: These two are in the right order, 4 < 5, so we leave them alone.
+
+    2 1 4 5 3: Another swap.
+
+    2 1 4 3 5: Here's the resulting array after one iteration.
+
+Because at least one swap occurred during the first pass (there were actually three), we need to go through the
+whole array again and repeat the same process. By repeating this process, until no more swaps are made, we'll 
+have a sorted array. The reason this algorithm is called Bubble Sort is because the numbers kind of "bubble up" 
+to the "surface." All numbers move to their respective places bit by bit, left to right, like bubbles slowly 
+rising from a body of water.
+
+</p>
+
+<h3>Quiz</h3>
+<p>
+Given an array of {64, 34, 25, 12, 22, 11, 90}, how many runs through the given code will it take to completely 
+sort the array?
+
+    void bubbleSort(int arr[]) 
+    { 
+        int n = arr.length; 
+        for (int i = 0; i < n-1; i++) 
+            for (int j = 0; j < n-i-1; j++) 
+                if (arr[j] > arr[j+1]) 
+                { 
+                    // swap arr[j+1] and arr[i] 
+                    int temp = arr[j]; 
+                    arr[j] = arr[j+1]; 
+                    arr[j+1] = temp; 
+                } 
+    } 
+
+5
+
+7 (correct)
+
+8
+
+9
+
+</p>
+
+</body>

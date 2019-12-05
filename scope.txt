@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>Scope</title>
+<head>
+
+<h1>Scope in Java</h1>
+
+</head>
+
+<body>
+
+<h2>Level 1</h2>
+
+<p>
+Scope in Java refers to what parts of the program has the ability to access a variable. The most common level of
+scope is class level scope or member variables, which are declared inside the class, but outside any function. 
+Any method inside the class can access these, and with different modifiers can be access outside of the class as
+well. These modifiers include public, protected, and the default. Private can only be accessed inside the class.
+</p>
+<p>
+Example:
+public class scopeEx
+{
+	//all variables defined inside a class are member variables
+	
+	int a;
+	private String b;
+	public double c;
+	protected int d;
+
+	method1() {...}
+	method2() {...}
+
+	char e;
+
+}
+</p>
+
+<h2>Level 2</h2>
+<p>
+Inside of a method, any declared variables only have method level scope, and cannot be accessed outside the method.
+These variables do not exsist after the method has finished executing. Methods can have variables passed on to them
+as parameters from outside the method.
+</p>
+<p>
+class methodEx
+{
+    private int x;
+    public void setX(int x)
+    {
+	int y = 1;
+        this.x = x;
+    }
+}
+</p>
+
+</body>

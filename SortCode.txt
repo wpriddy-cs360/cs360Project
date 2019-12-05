@@ -1,0 +1,66 @@
+<html>
+<head>
+<title> Web Based Java Tutorial: Sorting </title>
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "css.css" />
+</head>
+<body>
+<h2>Java Concepts and Techniques</h2>
+<a href='home'>Home</a>
+<a href='arrays'>Arrays</a>
+<a href='loops'>Loops</a>
+<a href='scope'>Scope</a>
+<br>
+
+<h1>Sorting in Java</h1>
+
+<h2>Level 1</h2>
+
+<p>
+There are multiple ways to sort in Java. Most common are the types such as bubble sorting, insertion sorting,
+merge sorting, and selection sorting. These all work differently, and each come with their strengths and weaknesses,
+mostly stemming from how effecient, or not, they are. None of these are built into Java however, the one that is
+only works with arrays, and only sorts smallest to largest. It is the Arrays.sort() method, and while useful does
+have its drawbacks, as mentioned before.
+</p>
+
+<p>
+Example:
+
+import java.util.Arrays;
+
+public class arrayEx
+{
+        int[] toSort = { 8, 23, 54, 1, 39, 87, 101 };
+
+        Arrays.sort(toSort);
+
+        System.out.printf("Modified arr[] : %s", Arrays.toString(arr));
+}
+
+This would print the sorted array: Modified arr[] : [1, 8, 23, 39, 54, 87, 101]
+</p>
+
+<h3>Quiz 1</h3>
+<p>What is the expected output of this sort code?<br>
+public class GFG { <br>
+    public static void main(String[] args)<br>
+    { <br>
+        int[] arr = { 13, 7, 6, 45, 21, 9, 101, 102 };<br>
+
+ Arrays.sort(arr); <br>
+
+        System.out.printf("Modified arr[] : %s",
+                          Arrays.toString(arr));<br>
+    } <br?
+} </p>
+<br>
+<button onclick="answer1()">Answer</button>
+<p id="answer1"></p>
+<script>
+function answer1() {
+  document.getElementById("answer1").innerHTML = "Modified arr[] : [6, 7, 9, 13, 21, 45, 101, 102]"
+}
+</script>
+</body>

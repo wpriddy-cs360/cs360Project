@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<title>Java examples page code</title>
+<head>
+
+</head>
+<body style="background-color:lightpink">
+    
+<h1>Java concepts and techniques</h1>
+<h2>By group # whatever</h2>
+
+<button type="button" onclick="window.location="arrays.html">Arrays</button>
+<button type="button" onclick="window.location="loops.html">Loops</button>
+<button type="button" onclick="window.location="scope.html">Scope</button>
+<button type="button" onclick="window.location="sort.html">Sort</button>
+</body>
+</html>
+
+<button type="button" onclick="window.location="index.html">Home</button>
+<button type="button" onclick="window.location="arrays.html">Arrays</button>
+<button type="button" onclick="window.location="loops.html">Loops</button>
+<button type="button" onclick="window.location="sort.html">Sort</button>
+
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "css.css" />
+
+<a href='index.html'>Home</a>
+<a href='loops'>Loops</a>
+<a href='scope'>Scope</a>
+<a href='sorting'>Sorting</a>
